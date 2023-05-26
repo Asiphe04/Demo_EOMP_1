@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+header img {
+  width: 35px !important;
+}
+
+.navbar {
+  margin-left: 100px;
+}
+#navbarnav a {
+  font-size: large !important;
+}
+.navbar {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 30px black;
+}
+#landing-section img {
+  margin-top: 50px;
+}
+
+.banner-headline {
+  height: 27px !important;
+}
+
+.banner-words-wrapper {
+  display: inline-block !important;
+}
+
+.banner-words-wrapper span {
+  display: inline-block !important;
+}
+
+#Facebook:hover {
+  color: rgb(2, 8, 120) !important;
+}
+#Twitter:hover {
+  color: skyblue !important;
+}
+#Instagram:hover {
+  color: purple !important;
+}
+#Github:hover {
+  color: green !important;
+}
+#Youtube:hover {
+  color: red !important;
+}
+#LinkedIn:hover {
+  color: blue !important;
+}
+
+.footer-container a {
+  color: white !important;
+  margin: 5px !important ;
+  padding: 5px !important;
+  font-size: x-large !important;
+}
+.social-icons a {
+  color: white !important;
+  margin: 5px !important ;
+  padding: 5px !important;
+  font-size: x-large !important;
+}
+
+/* EDUCATION */
+
+p {
+  font-family: sans-serif;
+}
+.profile-pic {
+  width: 150px !important;
+
+  border-radius: 50% !important;
+}
+
+
+
+.card {
+  position: relative;
+  width: 220px !important;
+  height: 250px !important;
+  background: red;
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--clr);
+
+  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+}
+.number {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+.number h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+.number h2 span {
+  font-weight: 300;
+  color: white;
+  font-size: 0.5em;
+}
+
+/* Projects */
+
+/* Flipcards */
+.flipcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flip-card {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+
+  height: 200px;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: black;
+}
+.flip-card-front img {
+  width: 100%;
+  height: 200px;
+}
+
+.flip-card-back {
+  background-color: black;
+  transform: rotateY(180deg);
+}
+button {
+  font-size: 1px;
+  padding: 10px 10px;
+  background-color: gray;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.project button:hover {
+  background-color: green;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.car {
+  width: 250px !important;
+  height: 200px !important;
+  object-fit: cover;
+}
+/* Testimonial */
+.testimonial-pic {
+  width: 225px;
+  height: 260px;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  /* CSS styles to apply for screens smaller than 768px */
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  /* .card {
+    display: block !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  } */
+}
+
+/* Example media query for screens larger than 1200px */
+@media (min-width: 1200px) {
+  /* CSS styles to apply for screens larger than 1200px */
+
+  .project {
+    width: 25%;
+  }
+}
+.navbar-nav {
+  flex-direction: column;
+}
+
+.navbar-nav .nav-item {
+  margin-bottom: 10px;
+}
+
+.project {
+  width: 25%;
+}
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .navbar {
+    overflow: hidden;
+  }
+  #card {
+    width: 100%;
+    display: block !important;
+  }
+
+  #card-body {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+.banner-words-wrapper span {
+  display: inline-block;
+}

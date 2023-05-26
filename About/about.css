@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: sans-serif;
+}
+header img {
+  width: 35px !important;
+}
+/* Navbar */
+.navbar {
+  margin-left: 100px;
+}
+#navbarnav a {
+  font-size: large !important;
+}
+.navbar {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 30px black;
+}
+
+.profile-pic {
+  width: 150px !important;
+
+  border-radius: 50% !important;
+}
+/* Description */
+#card {
+  border-radius: 10px !important ;
+  align-items: center;
+  display: flex !important;
+}
+#card-body {
+  width: max-content;
+}
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .navbar {
+    overflow: hidden;
+  }
+  #card {
+    width: 100%;
+    display: block !important;
+  }
+
+  #card-body {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Skills and interests */
+
+#skills-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+#interests-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+/* Education */
+
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: end;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  width: 250px !important;
+}
+.edu-card p {
+  font-size: 25px !important;
+  font-weight: bolder;
+}
+
+.edu-card-body {
+  background-color: rgb(36, 36, 36);
+  width: 231px !important;
+}
+.edu-card-body p {
+  font-size: 15px !important;
+  font-weight: bold;
+}
+.edu-card:nth-child(4){
+    position: relative;
+    left: 60%;
+}
+/* Progress bars */
+enable-transitions {
+  @keyframes progress-bar-stripes {
+    0% {
+      background-position-x: $progress-height;
+    }
+  }
+}
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust the value to set the desired spacing between progress bars */
+}
+
+.progress {
+  margin-bottom: 20px;
+  width: 500px; /* Adjust the value to set the desired spacing below each progress bar */
+}
+
+/* Footer */
+#Facebook:hover {
+  color: rgb(2, 8, 120) !important;
+}
+#Twitter:hover {
+  color: skyblue !important;
+}
+#Instagram:hover {
+  color: purple !important;
+}
+#Github:hover {
+  color: green !important;
+}
+#Youtube:hover {
+  color: red !important;
+}
+#LinkedIn:hover {
+  color: blue !important;
+}
+.footer-container a {
+  color: white !important;
+  margin: 5px !important ;
+  padding: 5px !important;
+  font-size: x-large !important;
+}
+.social-icons a {
+  color: white !important;
+  margin: 5px !important ;
+  padding: 5px !important;
+  font-size: x-large !important;
+}

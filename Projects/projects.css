@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+header img {
+  width: 35px !important;
+}
+
+.navbar {
+  margin-left: 100px;
+}
+#navbarnav a {
+  font-size: large !important;
+}
+.navbar {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 30px black;
+}
+.project {
+  width: 30% !important;
+}
+/* Projects */
+
+/* Flipcards */
+.flipcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flip-card {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: black;
+}
+.flip-card-front img {
+  width: 100%;
+  height: 200px;
+}
+
+.flip-card-back {
+  background-color: black;
+  transform: rotateY(180deg);
+ 
+}
+button {
+  font-size: 1px;
+  padding: 10px 10px;
+  background-color: gray;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.project button:hover {
+  background-color: green;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.car {
+  width: 250px !important;
+  height: 200px !important;
+  object-fit: cover;
+  border: 1px solid darkgray !important;
+  border-radius: 10px !important;
+}
+/* Testimonial */
+.testimonial-pic {
+  width: 225px;
+  height: 260px;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  /* CSS styles to apply for screens smaller than 768px */
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}
+
+/* Example media query for screens larger than 1200px */
+@media (min-width: 1200px) {
+  /* CSS styles to apply for screens larger than 1200px */
+
+  .project {
+    width: 25%;
+    padding: 10px !important;
+    margin: 10px !important;
+  }
+}
+.navbar-nav {
+  flex-direction: column;
+}
+
+.navbar-nav .nav-item {
+  margin-bottom: 10px;
+}
+
+.project {
+  width: 25%;
+}
+#Facebook:hover {
+  color: rgb(2, 8, 120) !important;
+}
+#Twitter:hover {
+  color: skyblue !important;
+}
+#Instagram:hover {
+  color: purple !important;
+}
+#Github:hover {
+  color: green !important;
+}
+#Youtube:hover {
+  color: red !important;
+}
+#LinkedIn:hover {
+  color: blue !important;
+}
+
+.footer-container a {
+  color: white !important;
+  margin: 5px !important ;
+  padding: 5px !important;
+  font-size: x-large !important;
+}
+.social-icons a {
+  color: white !important;
+  margin: 5px !important ;
+  padding: 5px !important;
+  font-size: x-large !important;
+}
+.projects {
+ width: 100% !important;
+  background-color: black;
+  color: white;
+}
+h3{
+  text-align: center !important;
+}
+#desc{
+  font-size: xx-small !important;
+}
